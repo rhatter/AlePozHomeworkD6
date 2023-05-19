@@ -1,0 +1,350 @@
+*{
+    opacity: 100%;
+}
+#data{
+    display: none;
+}
+body{
+    margin: 0px;
+}
+.topbar {
+    position: fixed;
+    height: 80px;
+    background-color: rgb(249, 249, 249);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+main{
+    margin-top: 80px;
+}
+
+.logobox{
+    display: flex;
+    align-items: center;
+}
+.logobox img{
+    width: 35px;
+    height: 35px;
+}
+.logobox span {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #d00115;
+	font-weight: bold;
+}
+.homebutton {
+	height: 48px;
+	min-width: 60px;
+	display: flex;
+	align-items: center;
+	padding: 0px 10px;
+	overflow-x: hidden;
+    width: 8vw;
+    min-width: 65px;
+    justify-content: center;
+}
+.homebutton span {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    display: inline-block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+}
+
+.searchbar {
+    width: 100%;
+    display: flex;
+    background-color: rgb(233, 233, 233);
+    border-radius: 20px;
+    height: 50%;
+    align-items: center;
+}
+.lensbox{
+    object-fit: cover;
+    width: 20px;
+    aspect-ratio: 1;
+    padding: 10px;
+    opacity: 50%;
+}
+.search {
+    width: 80%;
+    background: none;
+    border: none;
+    padding-right: 20px;
+}
+.search:focus, .search:focus-visible, .search:focus-within {
+    background: none;
+    border: none;
+    display: flex;
+    outline: none;
+    padding: 0px 10px;
+}
+.searchbar:focus .lensbox, .searchbar:focus-visible .lensbox, .searchbar:focus-within .lensbox{
+    display: none;
+}
+
+
+
+span {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.topbar .icon {
+    width: 25px;
+    height: auto;
+    opacity: 50%;
+    padding: 0px 16px;
+}
+
+.topbar>:last-child{
+    padding-right: 32px;
+}
+.topbar>:first-child{
+    padding-left: 32px;
+}
+.topbar .profile {
+    background-color: rgb(177, 177, 177);
+    border-radius: 100%;
+    aspect-ratio: 1;
+    margin: 0 16px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid grey 1px;
+    font-size: smaller;
+    min-width: 25px;
+}
+.profile span{
+    margin-left: -1px;
+}
+
+main {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+main>div{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+
+.cardImg{
+    width: 100%;
+    height: 100%;
+}
+.arrow{
+    width: 32px;
+    aspect-ratio: 1;
+}
+.icoC {
+    width: 20px;
+    aspect-ratio: 1;
+}
+.imgSect{
+    position:relative;    
+}
+.imgSect>.cardTop {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    transition: background-color 0.3s ease;
+    overflow-y: hidden;
+}
+.cardTop:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+.topTopBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+.topTopBar>:first-child{
+    margin-left: 10px;
+}
+.topTopBar>:last-child {
+    margin-right: 10px;
+}
+
+.saveButton {
+    width: 20%;
+    background-color: #d00115;
+    display: flex;
+    justify-content: center;
+    aspect-ratio: 8/5;
+    align-items: center;
+    border-radius: 500px;
+    min-width: 50px;
+}
+
+.bachecaDescBox {
+    display: inline-flex;
+    flex-flow: row;
+    justify-content: left;
+    align-items: center;
+    width: 50%;
+}
+
+.bachecaDescBox span, .linkText {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    display: inline-block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: unset;
+    font-size: small;
+    font-weight: bold;
+}
+
+.card {
+    width: 100%;
+    max-width: 240px;
+    margin-bottom: 10px;
+    overflow-x: hidden;
+}
+@media (max-width: 1470px) {
+    .card {
+        width: 100%;
+        margin: 10px 0px;
+        max-width: unset;
+    }
+    .macroCol {
+        flex-flow: column wrap;
+        justify-content: unset;
+        margin: 0px 20px;
+    }
+}
+
+.topbottomBar {
+    display: flex;
+    justify-content: space-between;
+    MARGIN: 15PX 15PX;
+    position: relative;
+    bottom: -50px;
+    transition: bottom 0.3s ease;
+}
+
+.cardTop:hover .topbottomBar {
+    bottom:0
+}
+
+.topbottomBar .icoC {
+    background-color: #929292;
+    border-radius: 20px;
+    height: 20px;
+    aspect-ratio: 1;
+    object-fit: cover;
+    overflow: visible;
+    margin-right: 5%;
+}
+.uploadBox{
+    height: 100%;
+}
+
+.uploadBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.topbottomBar span {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    display: inline-block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 100%;
+    font-size: small;
+    font-weight: bold;
+}
+
+.linkButton {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    MAX-WIDTH: 50%;
+    background-color: #929292;
+    border-radius: 20px;
+    PADDING: 0PX 10PX;
+    height: 30px;
+    cursor: pointer;
+}
+
+
+.uploadBox .icoC {
+    width: 20px;
+    aspect-ratio: 1;
+    padding: 5px;
+    cursor: pointer;
+    object-position: center;
+    object-fit: contain;
+}
+
+.topTopBar {
+        margin-top: -65px;
+        transition: margin-top 0.3s ease ;
+}
+
+.card:hover .topTopBar{
+    margin-top: 15px;
+}
+.imgSect {
+    display: flex;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.cardBack{
+    width: 100%;
+}
+
+.profileBox {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 10px 0px;
+}
+.profileBox>img{
+    border-radius: 100%;
+    overflow: hidden;
+    margin-right: 10px;
+    height: 100%;
+}
+
+.profileText{
+    width: 100%;
+}
+.titleCardSpan{
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: 1rem;
+}
+.downBox{
+    margin: 10px 0px;
+}
+.linkArrow{
+rotate: -45deg;
+}
+.saveButton{
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
